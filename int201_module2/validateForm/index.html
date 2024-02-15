@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      #fullname {
+        padding: 10px;
+        width: 200px;
+      }
+
+      button {
+        margin-top: 10px;
+        color: white;
+        border: 0;
+        width: 100px;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+      #save {
+        background-color: green;
+      }
+      #reset {
+        background-color: tan;
+      }
+      p,
+      label span {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Feedback Form</h1>
+    <div>
+      <div>
+        <label>Your Name: <span>*</span></label>
+        <input id="fullname" type="text" />
+        <p id="nameValidateMsg"></p>
+      </div>
+      <div>
+        <label>Describe your feedback: <span>*</span></label>
+        <textarea id="feedback" rows="5" cols="60"></textarea>
+        <p id="feedbackValidateMsg"></p>
+      </div>
+    </div>
+    <div id="buttonPanel">
+      <button id="save">Save</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <script src="./formValidation.js" type="module"></script>
+  </body>
+</html>
